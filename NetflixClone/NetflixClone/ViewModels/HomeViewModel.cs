@@ -2,6 +2,7 @@
 using NetflixClone.Models;
 using NetflixClone.Services;
 using System.Collections.ObjectModel;
+using NetflixClone.Pages;
 
 namespace NetflixClone.ViewModels
 {
