@@ -1,8 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using NetflixClone.Models;
 using NetflixClone.Services;
+using NetflixClone.Models;
 using System.Collections.ObjectModel;
-using NetflixClone.Pages;
 
 namespace NetflixClone.ViewModels
 {
