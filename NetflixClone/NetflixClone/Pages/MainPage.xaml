@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NetflixClone.Pages.MainPage"
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black"
              xmlns:vm="clr-namespace:NetflixClone.ViewModels"
+             xmlns:controls="clr-namespace:NetflixClone.Controls"
              x:DataType="vm:HomeViewModel">
 
     <ContentPage.Resources>
@@ -95,6 +96,20 @@
                     </HorizontalStackLayout>
 
                 </Grid>
+
+                <controls:MovieRow Heading="Top Rated" 
+                                   Movies="{Binding TopRated}" 
+                                   IsLarge="False" />
+                <controls:MovieRow Heading="Originals" 
+                                   Movies="{Binding NetflixOriginals}" 
+                                   IsLarge="True" />
+                <controls:MovieRow Heading="Trending" 
+                                   Movies="{Binding Trending}" 
+                                   IsLarge="False" />
+                <controls:MovieRow Heading="Action" 
+                                   Movies="{Binding ActionMovies}" 
+                                   IsLarge="False" />
+
             </VerticalStackLayout>
         </ScrollView>
         <Grid HeightRequest="35"

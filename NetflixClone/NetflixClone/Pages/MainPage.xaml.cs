@@ -11,6 +11,7 @@ public partial class MainPage : ContentPage
         _homeViewModel = homeViewModel;
         BindingContext = _homeViewModel;
     }
+
     protected async override void OnAppearing()
     {
         base.OnAppearing();
