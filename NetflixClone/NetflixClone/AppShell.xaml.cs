@@ -1,10 +1,15 @@
-﻿namespace NetflixClone
+﻿using NetflixClone.Pages;
+
+namespace NetflixClone;
+
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute(nameof(CategoriesPage), typeof(CategoriesPage));
     }
 }
+
